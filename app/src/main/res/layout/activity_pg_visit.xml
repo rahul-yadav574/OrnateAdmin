@@ -3,13 +3,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context="in.evolve.ornateadmin.Activity.PgListRequest">
+    tools:context="in.evolve.ornateadmin.Activity.PgVisitActivity" >
 
     <android.support.v7.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/pg_request_notifications">
+        android:id="@+id/pg_visit_recyclerView">
 
     </android.support.v7.widget.RecyclerView>
 </LinearLayout>

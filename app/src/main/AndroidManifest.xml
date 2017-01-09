@@ -19,7 +19,10 @@
         <activity android:name=".Activity.AddNewPg" />
         <activity android:name=".Activity.AddNewGuestHouse" />
         <activity android:name=".Activity.PgListRequest" />
-        <activity android:name=".Activity.PgProblems"></activity>
+        <activity android:name=".Activity.PgProblems" />
+        <activity android:name=".Activity.PgVisitActivity" />
+        <activity android:name=".Activity.PgBookActivity" />
+        <activity android:name=".Activity.GuestHouseBookActivity"></activity>
     </application>
 
 </manifest>
