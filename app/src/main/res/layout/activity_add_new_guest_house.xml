@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+;lnb <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -24,7 +24,7 @@
              <EditText
                  android:layout_width="match_parent"
                  android:layout_height="wrap_content"
-                 android:text="@string/pgName"
+                 android:hint="@string/pgName"
                  android:id="@+id/pgName"/>
          </android.support.design.widget.TextInputLayout>
          <android.support.design.widget.TextInputLayout
@@ -33,7 +33,7 @@
              <EditText
                  android:layout_width="match_parent"
                  android:layout_height="wrap_content"
-                 android:text="@string/pgAddress"
+                 android:hint="@string/pgAddress"
                  android:id="@+id/pgAddress"/>
          </android.support.design.widget.TextInputLayout>
          <android.support.design.widget.TextInputLayout
@@ -42,7 +42,7 @@
              <EditText
                  android:layout_width="match_parent"
                  android:layout_height="wrap_content"
-                 android:text="@string/city"
+                 android:hint="@string/city"
                  android:id="@+id/city"/>
          </android.support.design.widget.TextInputLayout>
          <android.support.design.widget.TextInputLayout
@@ -51,7 +51,7 @@
              <EditText
                  android:layout_width="match_parent"
                  android:layout_height="wrap_content"
-                 android:text="@string/locality"
+                 android:hint="@string/locality"
                  android:id="@+id/locality"/>
          </android.support.design.widget.TextInputLayout>
 
@@ -61,14 +61,15 @@
              <EditText
                  android:layout_width="match_parent"
                  android:layout_height="wrap_content"
-                 android:text="@string/conditions"
+                 android:hint="@string/conditions"
                  android:id="@+id/pg_conditions"/>
          </android.support.design.widget.TextInputLayout>
 
          <LinearLayout
              android:layout_width="match_parent"
              android:layout_height="wrap_content"
-             android:orientation="horizontal">
+             android:orientation="horizontal"
+             android:layout_marginTop="10dp">
              <TextView
                  android:padding="5dp"
                  android:layout_width="0dp"
@@ -76,8 +77,9 @@
                  android:layout_weight="0.4"
                  android:textSize="18sp"
                  android:gravity="center"
-                 android:text="Single Deluxe Price"/>
+                 android:text="One Night Charge : "/>
              <TextView
+
                  android:layout_width="0dp"
                  android:layout_height="match_parent"
                  android:layout_weight="0.2"
@@ -90,83 +92,8 @@
                  android:layout_height="match_parent"
                  android:layout_weight="0.4"/>
          </LinearLayout>
-         <LinearLayout
-             android:layout_width="match_parent"
-             android:layout_height="wrap_content"
-             android:orientation="horizontal">
-             <TextView
-                 android:padding="5dp"
-                 android:layout_width="0dp"
-                 android:layout_height="wrap_content"
-                 android:layout_weight="0.4"
-                 android:textSize="18sp"
-                 android:gravity="center"
-                 android:text="Double Deluxe price"/>
-             <TextView
-                 android:layout_width="0dp"
-                 android:layout_height="match_parent"
-                 android:layout_weight="0.2"
-                 android:text="₹"
-                 android:padding="5dp"
-                 android:textSize="25sp"
-                 android:gravity="right|bottom"/>
-             <EditText
-                 android:layout_width="0dp"
-                 android:layout_height="match_parent"
-                 android:layout_weight="0.4"/>
-         </LinearLayout>
-         <LinearLayout
-             android:layout_width="match_parent"
-             android:layout_height="wrap_content"
-             android:orientation="horizontal">
-             <TextView
-                 android:gravity="center"
-                 android:padding="5dp"
-                 android:layout_width="0dp"
-                 android:layout_height="wrap_content"
-                 android:layout_weight="0.4"
-                 android:textSize="18sp"
-                 android:text="Single  Suit  Price"/>
-             <TextView
-                 android:layout_width="0dp"
-                 android:layout_height="match_parent"
-                 android:layout_weight="0.2"
-                 android:text="₹"
-                 android:padding="5dp"
-                 android:textSize="25sp"
-                 android:gravity="right|bottom"/>
-             <EditText
-                 android:layout_width="0dp"
-                 android:layout_height="match_parent"
-                 android:layout_weight="0.4"/>
-         </LinearLayout>
-         <LinearLayout
-             android:layout_width="match_parent"
-             android:layout_height="wrap_content"
-             android:orientation="horizontal">
-             <TextView
-                 android:padding="5dp"
-                 android:layout_width="0dp"
-                 android:layout_height="wrap_content"
-                 android:layout_weight="0.4"
-                 android:textSize="18sp"
-                 android:gravity="center"
-                 android:text="Double Suit price"/>
-             <TextView
-                 android:layout_width="0dp"
-                 android:layout_height="match_parent"
-                 android:layout_weight="0.2"
-                 android:text="₹"
-                 android:padding="5dp"
-                 android:textSize="25sp"
-                 android:gravity="right|bottom"/>
-             <EditText
-                 android:layout_width="0dp"
-                 android:layout_height="match_parent"
-                 android:layout_weight="0.4"/>
-         </LinearLayout>
          <Button
-             android:layout_margin="10dp"
+             android:layout_marginTop="40dp"
              android:layout_width="match_parent"
              android:layout_height="wrap_content"
              android:id="@+id/submit_information"

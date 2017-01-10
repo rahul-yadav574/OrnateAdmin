@@ -20,7 +20,7 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/pgName"
+                android:hint="@string/pgName"
                 android:id="@+id/pgName"/>
         </android.support.design.widget.TextInputLayout>
         <android.support.design.widget.TextInputLayout
@@ -29,7 +29,7 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/pgAddress"
+                android:hint="@string/pgAddress"
                 android:id="@+id/pgAddress"/>
         </android.support.design.widget.TextInputLayout>
         <android.support.design.widget.TextInputLayout
@@ -38,7 +38,7 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/city"
+                android:hint="@string/city"
                 android:id="@+id/city"/>
         </android.support.design.widget.TextInputLayout>
         <android.support.design.widget.TextInputLayout
@@ -47,7 +47,7 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/locality"
+                android:hint="@string/locality"
                 android:id="@+id/locality"/>
         </android.support.design.widget.TextInputLayout>
 
@@ -57,7 +57,7 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/conditions"
+                android:hint="@string/conditions"
                 android:id="@+id/pg_conditions"/>
         </android.support.design.widget.TextInputLayout>
 
@@ -72,7 +72,7 @@
                 android:layout_weight="0.4"
                 android:textSize="18sp"
                 android:gravity="center"
-                android:text="Single Sharing price"/>
+                android:text="Single Person Price "/>
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -97,7 +97,7 @@
                 android:layout_weight="0.4"
                 android:textSize="18sp"
                 android:gravity="center"
-                android:text="Double Sharing price"/>
+                android:text="Double Sharing Price"/>
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -122,7 +122,7 @@
                 android:layout_weight="0.4"
                 android:textSize="18sp"
                 android:gravity="center"
-                android:text="Tripple Sharing price"/>
+                android:text="Tripple Sharing Price"/>
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -139,6 +139,7 @@
 
         <Button
             android:layout_margin="10dp"
+            android:layout_marginBottom="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/submit_information"
