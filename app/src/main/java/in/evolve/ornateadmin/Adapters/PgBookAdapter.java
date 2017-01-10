@@ -54,4 +54,9 @@ public class PgBookAdapter extends RecyclerView.Adapter<PgBookAdapter.PgBookView
             phoneNumber= (TextView) itemView.findViewById(R.id.pg_visitor_number);
         }
     }
+
+    public void changeList(List<PgBookInfo> list){
+        this.list = list;
+        this.notifyDataSetChanged();
+    }
 }

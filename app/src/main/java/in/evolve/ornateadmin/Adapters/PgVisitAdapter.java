@@ -20,8 +20,7 @@ public class PgVisitAdapter extends RecyclerView.Adapter<PgVisitAdapter.VisitorL
 
     private Context context;
     private List<PgVisitInfo> list;
-    public PgVisitAdapter(Context context, List<PgVisitInfo> list)
-    {
+    public PgVisitAdapter(Context context, List<PgVisitInfo> list) {
         this.context=context;
         this.list=list;
     }
@@ -61,5 +60,10 @@ public class PgVisitAdapter extends RecyclerView.Adapter<PgVisitAdapter.VisitorL
             date= (TextView) itemView.findViewById(R.id.pg_visitor_visit_date);
             time= (TextView) itemView.findViewById(R.id.pg_visitor_visit_time);
         }
+    }
+
+    public void changeList(List<PgVisitInfo> list){
+        this.list = list;
+        this.notifyDataSetChanged();
     }
 }

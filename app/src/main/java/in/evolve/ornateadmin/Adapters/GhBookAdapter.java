@@ -61,4 +61,9 @@ public class GhBookAdapter extends RecyclerView.Adapter<GhBookAdapter.GhBookView
             noOfRooms= (TextView) itemView.findViewById(R.id.gh_book_no_of_rooms);
         }
     }
+
+    public void changeList(List<GuestHouseBookInfo> list){
+        this.list = list ;
+        this.notifyDataSetChanged();
+    }
 }

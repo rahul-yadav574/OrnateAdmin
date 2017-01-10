@@ -58,4 +58,9 @@ public class PgRequestAdapter extends RecyclerView.Adapter<PgRequestAdapter.Requ
             address= (TextView) itemView.findViewById(R.id.pg_request_address);
         }
     }
+
+    public void changeList(List<PgRequest> list){
+        this.list = list;
+        this.notifyDataSetChanged();
+    }
 }
