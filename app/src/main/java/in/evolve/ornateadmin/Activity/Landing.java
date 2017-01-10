@@ -3,6 +3,7 @@ package in.evolve.ornateadmin.Activity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
 
@@ -11,11 +12,14 @@ import in.evolve.ornateadmin.R;
 public class Landing extends AppCompatActivity implements View.OnClickListener {
 
     private Button addGuestHouse,addPg,ghBookChck,pgBookChk,pgVisitChk,lisProCheck;
+    private Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_landing);
+        toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
 
         addGuestHouse = (Button) findViewById(R.id.add_new_gh);
         addPg = (Button) findViewById(R.id.add_new_pg);

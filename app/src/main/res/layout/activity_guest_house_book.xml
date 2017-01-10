@@ -5,9 +5,11 @@
     tools:context="in.evolve.ornateadmin.Activity.GuestHouseBookActivity"
     android:layout_height="match_parent">
 
+    <include android:id="@+id/toolbar" layout="@layout/toolbar_material"/>
+
     <android.support.v7.widget.RecyclerView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:id="@+id/gh_book_recyclerView">
 
     </android.support.v7.widget.RecyclerView>

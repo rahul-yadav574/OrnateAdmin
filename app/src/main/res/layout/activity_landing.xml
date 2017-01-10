@@ -6,7 +6,9 @@
     android:orientation="vertical"
     tools:context="in.evolve.ornateadmin.Activity.Landing">
 
+    <include android:id="@+id/toolbar"  layout="@layout/toolbar_material"/>
     <Button
+
         android:id="@+id/add_new_pg"
         android:layout_margin="10dp"
         android:layout_width="match_parent"

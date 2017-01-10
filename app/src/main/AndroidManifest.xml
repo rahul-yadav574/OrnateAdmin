@@ -7,14 +7,14 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/MaterialTheme.Base">
-        <activity android:name=".Activity.LoginActivity" />
-        <activity android:name=".Activity.Landing">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+        android:theme="@style/MaterialTheme.Default">
+        <activity android:name=".Activity.LoginActivity" > <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter></activity>
+        <activity android:name=".Activity.Landing">
+
         </activity>
         <activity android:name=".Activity.AddNewPg" />
         <activity android:name=".Activity.AddNewGuestHouse" />
