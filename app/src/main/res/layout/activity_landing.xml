@@ -7,6 +7,7 @@
     tools:context="in.evolve.ornateadmin.Activity.Landing">
 
     <Button
+        android:id="@+id/add_new_pg"
         android:layout_margin="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -16,6 +17,7 @@
         android:textColor="@android:color/white"/>
 
     <Button
+        android:id="@+id/add_new_gh"
         android:layout_margin="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -23,13 +25,43 @@
         android:text="Add New Guest House"
         android:textSize="20sp"
         android:textColor="@android:color/white"/>
+
     <Button
+        android:id="@+id/pg_book_check"
         android:layout_margin="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/landing_round_button"
-        android:text="Add PG Problem"
+        android:text="Pg Booking Check"
         android:textSize="20sp"
         android:textColor="@android:color/white"/>
+    <Button
+        android:id="@+id/pg_visit_check"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/landing_round_button"
+        android:text="Pg Visit Check"
+        android:textSize="20sp"
+        android:textColor="@android:color/white"/>
+    <Button
+        android:id="@+id/gh_book_check"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/landing_round_button"
+        android:text="Gh Booking Check"
+        android:textSize="20sp"
+        android:textColor="@android:color/white"/>
+    <Button
+        android:id="@+id/list_house_check"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/landing_round_button"
+        android:text="Property Check"
+        android:textSize="20sp"
+        android:textColor="@android:color/white"/>
+
 
 </LinearLayout>
