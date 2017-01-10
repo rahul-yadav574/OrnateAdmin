@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.Toolbar;
 import android.widget.Toast;
 
 import com.squareup.okhttp.Callback;
@@ -30,11 +31,14 @@ public class PgVisitActivity extends AppCompatActivity {
     RecyclerView recyclerView;
     PgVisitAdapter adapter;
     ProgressDialog  dialog;
+    Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pg_visit);
+        toolbar = (Toolbar) findViewById(R.id.toolbar);
+        toolbar.setTitle("Pg Visit...");
         recyclerView= (RecyclerView) findViewById(R.id.pg_visit_recyclerView);
         recyclerView.setLayoutManager(new LinearLayoutManager(PgVisitActivity.this));
         adapter = new PgVisitAdapter(PgVisitActivity.this,new ArrayList<PgVisitInfo>());

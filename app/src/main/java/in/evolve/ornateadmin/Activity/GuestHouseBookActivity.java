@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.Toolbar;
 import android.widget.Toast;
 
 import com.squareup.okhttp.Callback;
@@ -31,12 +32,16 @@ public class GuestHouseBookActivity extends AppCompatActivity {
     RecyclerView recyclerView;
     ProgressDialog dialog;
     GhBookAdapter adapter;
+    Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_guest_house_book);
         recyclerView= (RecyclerView) findViewById(R.id.gh_book_recyclerView);
+        toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        toolbar.setTitle("Guest House Booking...");
 
 
         recyclerView.setLayoutManager(new LinearLayoutManager(GuestHouseBookActivity.this));

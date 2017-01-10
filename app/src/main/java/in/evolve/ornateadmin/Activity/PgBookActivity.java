@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.Toolbar;
 import android.widget.Toast;
 
 import com.squareup.okhttp.Callback;
@@ -30,10 +31,15 @@ public class PgBookActivity extends AppCompatActivity {
     ProgressDialog dialog;
     PgBookAdapter adapter;
     RecyclerView recyclerView;
+    Toolbar toolbar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pg_book);
+
+        toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        toolbar.setTitle("Pg Booking...");
         recyclerView = (RecyclerView) findViewById(R.id.pg_conditionsbook_recyclerView);
         recyclerView.setLayoutManager(new LinearLayoutManager(PgBookActivity.this));
         adapter = new PgBookAdapter(PgBookActivity.this,new ArrayList<PgBookInfo>());
