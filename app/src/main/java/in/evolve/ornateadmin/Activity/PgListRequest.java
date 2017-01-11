@@ -118,7 +118,7 @@ public class PgListRequest extends AppCompatActivity {
             String email = json.getJSONObject(i).getString("email");
             String phone = json.getJSONObject(i).getString("phone");
             String address = json.getJSONObject(i).getString("address");
-            String rooms = json.getJSONObject(i).getString("rooms");
+            String rooms = json.getJSONObject(i).getString("nrooms");
 
             list.add(new PgRequest(name,email,phone,rooms,address));
 

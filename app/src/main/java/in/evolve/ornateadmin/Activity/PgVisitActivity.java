@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.widget.Toast;
 
 import com.squareup.okhttp.Callback;
@@ -80,6 +81,7 @@ public class PgVisitActivity extends AppCompatActivity {
                             @Override
                             public void run() {
                                 hideProgressDialog();
+                                Log.d("size is",""+lis.size());
                                 adapter.changeList(lis);
 
                             }

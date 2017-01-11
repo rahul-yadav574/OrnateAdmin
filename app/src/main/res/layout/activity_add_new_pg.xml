@@ -20,7 +20,7 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/pgName"
+                android:hint="@string/pgName"
                 android:id="@+id/pgName"/>
         </android.support.design.widget.TextInputLayout>
         <android.support.design.widget.TextInputLayout
@@ -29,7 +29,7 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/pgAddress"
+                android:hint="@string/pgAddress"
                 android:id="@+id/pgAddress"/>
         </android.support.design.widget.TextInputLayout>
         <android.support.design.widget.TextInputLayout
@@ -38,7 +38,7 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/city"
+                android:hint="@string/city"
                 android:id="@+id/city"/>
         </android.support.design.widget.TextInputLayout>
         <android.support.design.widget.TextInputLayout
@@ -82,6 +82,7 @@
                 android:textSize="25sp"
                 android:gravity="right|bottom"/>
             <EditText
+                android:id="@+id/single_price"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="0.4"/>
@@ -107,6 +108,8 @@
                 android:textSize="25sp"
                 android:gravity="right|bottom"/>
             <EditText
+
+                android:id="@+id/double_price"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="0.4"/>
@@ -132,6 +135,7 @@
                 android:textSize="25sp"
                 android:gravity="right|bottom"/>
             <EditText
+                android:id="@+id/triple_price"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="0.4"/>

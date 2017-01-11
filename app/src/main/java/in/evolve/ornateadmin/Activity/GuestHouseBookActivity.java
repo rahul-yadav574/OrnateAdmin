@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.widget.Toast;
 
 import com.squareup.okhttp.Callback;
@@ -56,7 +57,7 @@ public class GuestHouseBookActivity extends AppCompatActivity {
         OkHttpClient okHttpClient = new OkHttpClient();
 
         Request request = new Request.Builder()
-                .get().url("http://ornateresidency.com/adminappapi/pgbookingcheck.php")
+                .get().url("http://ornateresidency.com/adminappapi/guesthousebookingcheck.php")
                 .build();
         okHttpClient.newCall(request).enqueue(new Callback() {
             @Override
@@ -85,6 +86,7 @@ public class GuestHouseBookActivity extends AppCompatActivity {
                             @Override
                             public void run() {
                                 hideProgressDialog();
+                                Log.d("size is",""+lis.size());
                                 adapter.changeList(lis);
 
                             }
@@ -123,7 +125,7 @@ public class GuestHouseBookActivity extends AppCompatActivity {
             String pgid = json.getJSONObject(i).getString("ghid");
             String date = json.getJSONObject(i).getString("date");
             String nPeople = json.getJSONObject(i).getString("people");
-            String nRooms = json.getJSONObject(i).getString("nrroms");
+            String nRooms = json.getJSONObject(i).getString("nrooms");
 
             list.add(new GuestHouseBookInfo(name,email,phone,pgid,date,nRooms));
 

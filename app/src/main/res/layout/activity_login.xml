@@ -12,6 +12,7 @@
 
 
     <EditText
+        android:inputType="number"
         android:layout_margin="20dp"
         android:hint="@string/hint_email"
         android:layout_marginTop="40dp"

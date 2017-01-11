@@ -43,6 +43,7 @@ public class PgBookActivity extends AppCompatActivity {
         recyclerView = (RecyclerView) findViewById(R.id.pg_conditionsbook_recyclerView);
         recyclerView.setLayoutManager(new LinearLayoutManager(PgBookActivity.this));
         adapter = new PgBookAdapter(PgBookActivity.this,new ArrayList<PgBookInfo>());
+        recyclerView.setAdapter(adapter);
         fetchGuestHouseList();
     }
 

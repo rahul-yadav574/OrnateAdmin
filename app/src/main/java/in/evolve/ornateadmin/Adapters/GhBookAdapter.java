@@ -26,7 +26,7 @@ public class GhBookAdapter extends RecyclerView.Adapter<GhBookAdapter.GhBookView
     }
     @Override
     public GhBookViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        return new GhBookViewHolder(LayoutInflater.from(context).inflate(R.layout.guest_house_book_custom_single_item,parent,false),viewType);
+        return new GhBookViewHolder(LayoutInflater.from(context).inflate(R.layout.guest_house_book_custom_single_item,parent,false));
     }
 
     @Override
@@ -51,7 +51,7 @@ public class GhBookAdapter extends RecyclerView.Adapter<GhBookAdapter.GhBookView
         TextView noOfPeople;
         TextView date;
         TextView noOfRooms;
-        public GhBookViewHolder(View itemView, int viewType) {
+        public GhBookViewHolder(View itemView) {
             super(itemView);
             name= (TextView) itemView.findViewById(R.id.gh_book_name);
             email= (TextView) itemView.findViewById(R.id.gh_book_email);

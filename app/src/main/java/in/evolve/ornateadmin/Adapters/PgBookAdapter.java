@@ -27,7 +27,7 @@ public class PgBookAdapter extends RecyclerView.Adapter<PgBookAdapter.PgBookView
     }
     @Override
     public PgBookViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        return new PgBookViewHolder(LayoutInflater.from(context).inflate(R.layout.pg_book_custom_single_item,parent,false),viewType);
+        return new PgBookViewHolder(LayoutInflater.from(context).inflate(R.layout.pg_book_custom_single_item,parent,false));
     }
 
     @Override
@@ -47,7 +47,7 @@ public class PgBookAdapter extends RecyclerView.Adapter<PgBookAdapter.PgBookView
         TextView email;
         TextView phoneNumber;
 
-        public PgBookViewHolder(View itemView, int viewType) {
+        public PgBookViewHolder(View itemView) {
             super(itemView);
             name= (TextView) itemView.findViewById(R.id.pg_visitor_name);
             email= (TextView) itemView.findViewById(R.id.pg_visitor_email);

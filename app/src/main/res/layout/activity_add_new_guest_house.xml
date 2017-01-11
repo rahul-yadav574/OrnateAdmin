@@ -66,6 +66,7 @@
          </android.support.design.widget.TextInputLayout>
 
          <LinearLayout
+             android:layout_marginTop="10dp"
              android:layout_width="match_parent"
              android:layout_height="wrap_content"
              android:orientation="horizontal">
@@ -76,7 +77,7 @@
                  android:layout_weight="0.4"
                  android:textSize="18sp"
                  android:gravity="center"
-                 android:text="Single Deluxe Price"/>
+                 android:text="Rate : "/>
              <TextView
                  android:layout_width="0dp"
                  android:layout_height="match_parent"
@@ -86,87 +87,15 @@
                  android:textSize="25sp"
                  android:gravity="right|center"/>
              <EditText
+                 android:id="@+id/onenightrate"
                  android:layout_width="0dp"
                  android:layout_height="match_parent"
                  android:layout_weight="0.4"/>
          </LinearLayout>
-         <LinearLayout
-             android:layout_width="match_parent"
-             android:layout_height="wrap_content"
-             android:orientation="horizontal">
-             <TextView
-                 android:padding="5dp"
-                 android:layout_width="0dp"
-                 android:layout_height="wrap_content"
-                 android:layout_weight="0.4"
-                 android:textSize="18sp"
-                 android:gravity="center"
-                 android:text="Double Deluxe price"/>
-             <TextView
-                 android:layout_width="0dp"
-                 android:layout_height="match_parent"
-                 android:layout_weight="0.2"
-                 android:text="₹"
-                 android:padding="5dp"
-                 android:textSize="25sp"
-                 android:gravity="right|bottom"/>
-             <EditText
-                 android:layout_width="0dp"
-                 android:layout_height="match_parent"
-                 android:layout_weight="0.4"/>
-         </LinearLayout>
-         <LinearLayout
-             android:layout_width="match_parent"
-             android:layout_height="wrap_content"
-             android:orientation="horizontal">
-             <TextView
-                 android:gravity="center"
-                 android:padding="5dp"
-                 android:layout_width="0dp"
-                 android:layout_height="wrap_content"
-                 android:layout_weight="0.4"
-                 android:textSize="18sp"
-                 android:text="Single  Suit  Price"/>
-             <TextView
-                 android:layout_width="0dp"
-                 android:layout_height="match_parent"
-                 android:layout_weight="0.2"
-                 android:text="₹"
-                 android:padding="5dp"
-                 android:textSize="25sp"
-                 android:gravity="right|bottom"/>
-             <EditText
-                 android:layout_width="0dp"
-                 android:layout_height="match_parent"
-                 android:layout_weight="0.4"/>
-         </LinearLayout>
-         <LinearLayout
-             android:layout_width="match_parent"
-             android:layout_height="wrap_content"
-             android:orientation="horizontal">
-             <TextView
-                 android:padding="5dp"
-                 android:layout_width="0dp"
-                 android:layout_height="wrap_content"
-                 android:layout_weight="0.4"
-                 android:textSize="18sp"
-                 android:gravity="center"
-                 android:text="Double Suit price"/>
-             <TextView
-                 android:layout_width="0dp"
-                 android:layout_height="match_parent"
-                 android:layout_weight="0.2"
-                 android:text="₹"
-                 android:padding="5dp"
-                 android:textSize="25sp"
-                 android:gravity="right|bottom"/>
-             <EditText
-                 android:layout_width="0dp"
-                 android:layout_height="match_parent"
-                 android:layout_weight="0.4"/>
-         </LinearLayout>
+
          <Button
-             android:layout_margin="10dp"
+
+             android:layout_margin="20dp"
              android:layout_width="match_parent"
              android:layout_height="wrap_content"
              android:id="@+id/submit_information"

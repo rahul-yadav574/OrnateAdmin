@@ -43,11 +43,11 @@ public class Landing extends AppCompatActivity implements View.OnClickListener {
 
         switch (view.getId()){
             case R.id.add_new_gh:
-                Intent intent = new Intent(Landing.this,AddNewPg.class);
+                Intent intent = new Intent(Landing.this,AddNewGuestHouse.class);
                 startActivity(intent);
                 break;
             case R.id.add_new_pg:
-                Intent intent1 = new Intent(Landing.this,AddNewGuestHouse.class);
+                Intent intent1 = new Intent(Landing.this,AddNewPg.class);
                 startActivity(intent1);
                 break;
             case R.id.gh_book_check:

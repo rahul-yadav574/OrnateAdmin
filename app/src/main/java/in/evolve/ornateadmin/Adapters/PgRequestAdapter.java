@@ -26,7 +26,7 @@ public class PgRequestAdapter extends RecyclerView.Adapter<PgRequestAdapter.Requ
     }
     @Override
     public RequestListViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        return new RequestListViewHolder(LayoutInflater.from(context).inflate(R.layout.pg_list_request_custom_single_item,parent,false),viewType);
+        return new RequestListViewHolder(LayoutInflater.from(context).inflate(R.layout.pg_list_request_custom_single_item,parent,false));
     }
 
     @Override
@@ -49,7 +49,7 @@ public class PgRequestAdapter extends RecyclerView.Adapter<PgRequestAdapter.Requ
         TextView type;
         TextView noOfRooms;
         TextView address;
-        public RequestListViewHolder(View itemView, int viewType) {
+        public RequestListViewHolder(View itemView) {
             super(itemView);
             name= (TextView) itemView.findViewById(R.id.pg_request_name);
             email= (TextView) itemView.findViewById(R.id.pg_request_email);

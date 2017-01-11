@@ -26,7 +26,7 @@ public class PgVisitAdapter extends RecyclerView.Adapter<PgVisitAdapter.VisitorL
     }
     @Override
     public VisitorListViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        return new VisitorListViewHolder(LayoutInflater.from(context).inflate(R.layout.pg_visit_custom_single_item,parent,false),viewType);
+        return new VisitorListViewHolder(LayoutInflater.from(context).inflate(R.layout.pg_visit_custom_single_item,parent,false));
     }
 
     @Override
@@ -51,7 +51,7 @@ public class PgVisitAdapter extends RecyclerView.Adapter<PgVisitAdapter.VisitorL
         TextView occupancy;
         TextView date;
         TextView time;
-        public VisitorListViewHolder(View itemView, int viewType) {
+        public VisitorListViewHolder(View itemView) {
             super(itemView);
             name= (TextView) itemView.findViewById(R.id.pg_visitor_name);
             email= (TextView) itemView.findViewById(R.id.pg_visitor_email);
