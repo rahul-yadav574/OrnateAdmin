@@ -72,7 +72,7 @@
                 android:layout_weight="0.4"
                 android:textSize="18sp"
                 android:gravity="center"
-                android:text="Single Sharing price"/>
+                android:text="Single Person Price "/>
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -98,7 +98,7 @@
                 android:layout_weight="0.4"
                 android:textSize="18sp"
                 android:gravity="center"
-                android:text="Double Sharing price"/>
+                android:text="Double Sharing Price"/>
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -125,7 +125,7 @@
                 android:layout_weight="0.4"
                 android:textSize="18sp"
                 android:gravity="center"
-                android:text="Tripple Sharing price"/>
+                android:text="Tripple Sharing Price"/>
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -143,6 +143,7 @@
 
         <Button
             android:layout_margin="10dp"
+            android:layout_marginBottom="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/submit_information"
