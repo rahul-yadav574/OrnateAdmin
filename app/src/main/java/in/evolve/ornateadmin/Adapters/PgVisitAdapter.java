@@ -1,10 +1,13 @@
 package in.evolve.ornateadmin.Adapters;
 
 import android.content.Context;
+import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.List;
@@ -30,13 +33,21 @@ public class PgVisitAdapter extends RecyclerView.Adapter<PgVisitAdapter.VisitorL
     }
 
     @Override
-    public void onBindViewHolder(VisitorListViewHolder holder, int position) {
+    public void onBindViewHolder(VisitorListViewHolder holder, final int position) {
         holder.name.setText(list.get(position).getName());
         holder.email.setText(list.get(position).getEmail());
         holder.phoneNumber.setText(list.get(position).getPhoneNumber());
         holder.occupancy.setText(list.get(position).getOccupancy());
         holder.date.setText(list.get(position).getDate());
         holder.time.setText(list.get(position).getTime());
+
+        holder.call.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                callUser(list.get(position).getPhoneNumber());
+            }
+        });
+
     }
 
     @Override
@@ -51,8 +62,11 @@ public class PgVisitAdapter extends RecyclerView.Adapter<PgVisitAdapter.VisitorL
         TextView occupancy;
         TextView date;
         TextView time;
+        ImageView call;
+
         public VisitorListViewHolder(View itemView) {
             super(itemView);
+            call = (ImageView) itemView.findViewById(R.id.make_call);
             name= (TextView) itemView.findViewById(R.id.pg_visitor_name);
             email= (TextView) itemView.findViewById(R.id.pg_visitor_email);
             phoneNumber= (TextView) itemView.findViewById(R.id.pg_visitor_number);
@@ -65,5 +79,10 @@ public class PgVisitAdapter extends RecyclerView.Adapter<PgVisitAdapter.VisitorL
     public void changeList(List<PgVisitInfo> list){
         this.list = list;
         this.notifyDataSetChanged();
+    }
+
+    private void callUser(String phone){
+        Intent intent = new Intent(Intent.ACTION_CALL, Uri.parse("tel:" + phone));
+        context.startActivity(intent);
     }
 }

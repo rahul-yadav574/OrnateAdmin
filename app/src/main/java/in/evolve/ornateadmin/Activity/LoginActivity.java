@@ -9,6 +9,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import in.evolve.ornateadmin.FcmData.RegistrationService;
 import in.evolve.ornateadmin.R;
 
 public class LoginActivity extends AppCompatActivity {
@@ -21,6 +22,9 @@ public class LoginActivity extends AppCompatActivity {
         Toolbar tool = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(tool);
         tool.setTitle("Login...");
+
+        Intent intent = new Intent(LoginActivity.this, RegistrationService.class);
+        startService(intent);
 
         final EditText email = (EditText) findViewById(R.id.login_email_input);
         final EditText pass = (EditText) findViewById(R.id.login_pass_input);

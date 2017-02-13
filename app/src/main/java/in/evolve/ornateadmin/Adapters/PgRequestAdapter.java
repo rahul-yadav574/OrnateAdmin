@@ -1,10 +1,14 @@
 package in.evolve.ornateadmin.Adapters;
 
 import android.content.Context;
+import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.List;
@@ -30,12 +34,19 @@ public class PgRequestAdapter extends RecyclerView.Adapter<PgRequestAdapter.Requ
     }
 
     @Override
-    public void onBindViewHolder(RequestListViewHolder holder, int position) {
+    public void onBindViewHolder(RequestListViewHolder holder, final int position) {
+        Log.d("checking","working");
        holder.name.setText(list.get(position).getName());
         holder.email.setText(list.get(position).getEmail());
         holder.type.setText(list.get(position).getType());
         holder.noOfRooms.setText(list.get(position).getNoOfRooms());
         holder.address.setText(list.get(position).getAddress());
+        holder.call.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
     }
 
     @Override
@@ -49,8 +60,10 @@ public class PgRequestAdapter extends RecyclerView.Adapter<PgRequestAdapter.Requ
         TextView type;
         TextView noOfRooms;
         TextView address;
+        ImageView call;
         public RequestListViewHolder(View itemView) {
             super(itemView);
+            call = (ImageView) itemView.findViewById(R.id.make_call);
             name= (TextView) itemView.findViewById(R.id.pg_request_name);
             email= (TextView) itemView.findViewById(R.id.pg_request_email);
             type= (TextView) itemView.findViewById(R.id.pg_request_type);
@@ -62,5 +75,9 @@ public class PgRequestAdapter extends RecyclerView.Adapter<PgRequestAdapter.Requ
     public void changeList(List<PgRequest> list){
         this.list = list;
         this.notifyDataSetChanged();
+    }
+    private void callUser(String phone){
+        Intent intent = new Intent(Intent.ACTION_CALL, Uri.parse("tel:" + phone));
+        context.startActivity(intent);
     }
 }

@@ -1,10 +1,14 @@
 package in.evolve.ornateadmin.Adapters;
 
 import android.content.Context;
+import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.List;
@@ -31,10 +35,16 @@ public class PgBookAdapter extends RecyclerView.Adapter<PgBookAdapter.PgBookView
     }
 
     @Override
-    public void onBindViewHolder(PgBookViewHolder holder, int position) {
+    public void onBindViewHolder(PgBookViewHolder holder, final int position) {
         holder.name.setText(list.get(position).getName());
         holder.email.setText(list.get(position).getEmail());
         holder.phoneNumber.setText(list.get(position).getPhoneNumber());
+        holder.call.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                callUser(list.get(position).getPhoneNumber());
+            }
+        });
     }
 
     @Override
@@ -46,9 +56,11 @@ public class PgBookAdapter extends RecyclerView.Adapter<PgBookAdapter.PgBookView
         TextView name;
         TextView email;
         TextView phoneNumber;
+        ImageView call;
 
         public PgBookViewHolder(View itemView) {
             super(itemView);
+            call = (ImageView) itemView.findViewById(R.id.make_call);
             name= (TextView) itemView.findViewById(R.id.pg_visitor_name);
             email= (TextView) itemView.findViewById(R.id.pg_visitor_email);
             phoneNumber= (TextView) itemView.findViewById(R.id.pg_visitor_number);
@@ -58,5 +70,10 @@ public class PgBookAdapter extends RecyclerView.Adapter<PgBookAdapter.PgBookView
     public void changeList(List<PgBookInfo> list){
         this.list = list;
         this.notifyDataSetChanged();
+    }
+
+    private void callUser(String phone){
+        Intent intent = new Intent(Intent.ACTION_CALL, Uri.parse("tel:" + phone));
+        context.startActivity(intent);
     }
 }

@@ -43,6 +43,7 @@
                 <TextView
                     android:layout_margin="1dp"
                     android:padding="2dp"
+                    android:visibility="gone"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Occupancy"
@@ -60,6 +61,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Time"
+                    android:visibility="gone"
                     android:id="@+id/pg_visitor_visit_time"/>
             </LinearLayout>
             <ImageView

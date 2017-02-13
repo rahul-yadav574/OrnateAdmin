@@ -24,7 +24,7 @@
              <EditText
                  android:layout_width="match_parent"
                  android:layout_height="wrap_content"
-                 android:text="@string/pgName"
+                 android:hint="@string/pgName"
                  android:id="@+id/pgName"/>
          </android.support.design.widget.TextInputLayout>
          <android.support.design.widget.TextInputLayout
@@ -33,7 +33,7 @@
              <EditText
                  android:layout_width="match_parent"
                  android:layout_height="wrap_content"
-                 android:text="@string/pgAddress"
+                 android:hint="@string/pgAddress"
                  android:id="@+id/pgAddress"/>
          </android.support.design.widget.TextInputLayout>
          <android.support.design.widget.TextInputLayout
@@ -42,7 +42,7 @@
              <EditText
                  android:layout_width="match_parent"
                  android:layout_height="wrap_content"
-                 android:text="@string/city"
+                 android:hint="@string/city"
                  android:id="@+id/city"/>
          </android.support.design.widget.TextInputLayout>
          <android.support.design.widget.TextInputLayout
@@ -51,7 +51,7 @@
              <EditText
                  android:layout_width="match_parent"
                  android:layout_height="wrap_content"
-                 android:text="@string/locality"
+                 android:hint="@string/locality"
                  android:id="@+id/locality"/>
          </android.support.design.widget.TextInputLayout>
 
@@ -61,7 +61,7 @@
              <EditText
                  android:layout_width="match_parent"
                  android:layout_height="wrap_content"
-                 android:text="@string/conditions"
+                 android:hint="@string/conditions"
                  android:id="@+id/pg_conditions"/>
          </android.support.design.widget.TextInputLayout>
 
