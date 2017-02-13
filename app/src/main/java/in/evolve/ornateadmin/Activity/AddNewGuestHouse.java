@@ -32,6 +32,7 @@ import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 
 import in.evolve.ornateadmin.R;
+import in.evolve.ornateadmin.Utils;
 
 public class AddNewGuestHouse extends AppCompatActivity {
 
@@ -94,6 +95,11 @@ public class AddNewGuestHouse extends AppCompatActivity {
     }
 
     private void addNewPg(){
+
+        if(getStringImage(bitmap)==null){
+            Utils.toastL(AddNewGuestHouse.this,"Add a image first....");
+            return;
+        }
 
         showProgressDialog("Submitting...");
 

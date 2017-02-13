@@ -33,6 +33,7 @@ import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 
 import in.evolve.ornateadmin.R;
+import in.evolve.ornateadmin.Utils;
 
 public class AddNewPg extends AppCompatActivity {
 
@@ -98,6 +99,11 @@ public class AddNewPg extends AppCompatActivity {
     }
 
     private void addNewPg(){
+
+        if(getStringImage(bitmap)==null){
+            Utils.toastL(AddNewPg.this,"Add a image first....");
+            return;
+        }
 
         showProgressDialog("Submitting...");
 

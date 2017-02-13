@@ -1,0 +1,107 @@
+{
+  "project_info": {
+    "project_number": "537931910993",
+    "firebase_url": "https://ornate-residency.firebaseio.com",
+    "project_id": "ornate-residency",
+    "storage_bucket": "ornate-residency.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:537931910993:android:bdc8260d715025e9",
+        "android_client_info": {
+          "package_name": "in.evolve.ornateresidency"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "537931910993-a0cbd8fivs1n9d7bdgddh2js8lgijgbs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "in.evolve.ornateresidency",
+            "certificate_hash": "97E9E19E663FB79555244F80C079802D7E8DD049"
+          }
+        },
+        {
+          "client_id": "537931910993-hu5amqjqgce4bm1najqnudn0kbs5ls79.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "537931910993-f1ab7uvd2gaj242lacpsqav0ma7g02cr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyArMirL9N3M5_Wzye77ZXu2dnoKfk-F2ww"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "537931910993-hu5amqjqgce4bm1najqnudn0kbs5ls79.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:537931910993:android:8b8f388eff641b2b",
+        "android_client_info": {
+          "package_name": "in.evolve.ornateadmin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "537931910993-59e9gqpefo4isdsp0ju46cu31dajhqh4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "in.evolve.ornateadmin",
+            "certificate_hash": "97E9E19E663FB79555244F80C079802D7E8DD049"
+          }
+        },
+        {
+          "client_id": "537931910993-hu5amqjqgce4bm1najqnudn0kbs5ls79.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "537931910993-f1ab7uvd2gaj242lacpsqav0ma7g02cr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyArMirL9N3M5_Wzye77ZXu2dnoKfk-F2ww"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "537931910993-hu5amqjqgce4bm1najqnudn0kbs5ls79.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
